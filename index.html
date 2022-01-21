@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diamond CMS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09c6e4ace2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="panel">
+        <div class="row m-0 h-100">
+            <div class="panel-left col-2 p-0 px-4 text-white text-center">
+                <section class="date-box">
+                    <p class="mb-0 day">Środa</p>
+                    <p class="mb-0 time">12:00</p>
+                    <p class="mb-0 date text-muted">20/20/2020</p>
+                </section>
+                <nav class="menu">
+                    <a href="index.html" class="active">
+                        <div class="menu-item">
+                            <i class="fas fa-sliders-h"></i>
+                            <p>strona główna</p>
+                        </div>
+                    </a>
+                    <a href="posts.html">
+                        <div class="menu-item">
+                            <i class="far fa-comments"></i>
+                            <p>posty</p>
+                        </div>
+                    </a>
+                    <a href="users.html">
+                        <div class="menu-item">
+                            <i class="fas fa-user-friends"></i>
+                            <p>użytkownicy</p>
+                        </div>
+                    </a>
+                </nav>
+                <section class="info-box mt-3">
+                    <h3>Diamond CMS</h3>
+                    <p class="text-muted"> &copy; M. Grochowski | 2022</p>
+                </section>
+            </div>
+            <div class="panel-right col-10 p-0">
+
+                <div class="row m-0 h-100">
+
+                    <div class="col-9 mt-5">
+
+                        <section class="main-stats py-4 px-5 text-light text-center">
+                            <h1 class="mb-5">główne statystyki</h1>
+                            <div class="row mb-5">
+
+                                <div class="col-4">
+                                    <div class="main-stat-box p-5 border">
+                                        <h3>postów</h3>
+                                        <p>Łącznie: 4.250.120</p>
+                                        <p>W tym miesiącu: 125.703</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="main-stat-box p-5 border">
+                                        <h3>tematów</h3>
+                                        <p>Łącznie: 1.830.484</p>
+                                        <p>W tym miesiącu: 35.000</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="main-stat-box p-5 border">
+                                        <h3>użytkowników</h3>
+                                        <p>Łącznie: 750.064</p>
+                                        <p>W tym miesiącu: 8.409</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div id="chart" class="py-5 text-dark"></div>
+                        </section>
+
+                        <section class="main-table p-5">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="mb-3">Ostatnie posty:</h3>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-light dropdown-toggle" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sortuj
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Według dat</a></li>
+                                        <li><a class="dropdown-item" href="#">Według autora</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <table class="table table-transparent text-light">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Temat</th>
+                                        <th scope="col">Użytkownik</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Lorem, ipsum dolor.</td>
+                                        <td>Otto</td>
+                                        <td>20/20/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                        <td>Thornton</td>
+                                        <td>20/20/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td>Lorem ipsum dolor sit amet.</td>
+                                        <td>Larry the Bird</td>
+                                        <td>20/20/2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+
+                    <aside class="col-3 p-4 text-light text-center pe-5">
+
+                        <section class="logo py-4">
+                            <p class="logo-text">
+                                <i class="far fa-gem"></i> Diamond
+                            </p>
+                            <p>Powerful tool for professionals & cookie lovers.</p>
+                        </section>
+                        <section class="users-online py-5">
+                            <h3>użytkownicy online</h3>
+                            <p>47</p>
+                        </section>
+                        <section class="users-gender py-4">
+                            <h3>płeć użytkowników</h3>
+                            <div class="row m-0">
+                                <div class="col-6 box">
+                                    <i class="fas fa-male"></i>
+                                    <p>56%</p>
+                                </div>
+                                <div class="col-6 box">
+                                    <i class="fas fa-female"></i>
+                                    <p>44%</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="monthly-stats py-5">
+
+                            <h3>statystyki</h3>
+                            <div class="form-group mb-4">
+                                <select class="form-select text-black">
+                                    <option selected>Styczeń</option>
+                                    <option>Luty</option>
+                                    <option>Marzec</option>
+                                    <option>Kwiecień</option>
+                                    <option>Maj</option>
+                                    <option>Czerwiec</option>
+                                    <option>Lipiec</option>
+                                    <option>Sierpień</option>
+                                    <option>Wrzesień</option>
+                                    <option>Październik</option>
+                                    <option>Listopad</option>
+                                    <option>Grudzień</option>
+                                </select>
+                            </div>
+
+                            <div class="row m-0">
+                                <div class="col-6 mb-4">
+                                    <p class="info">Posty</p>
+                                    <p class="number text-muted">125.703</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <p class="info">Rejestracje</p>
+                                    <p class="number text-muted">8.409</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <p class="info">Śr. czas - pobyt</p>
+                                    <p class="number text-muted">46min</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <p class="info">Śr. czas - aktywność</p>
+                                    <p class="number text-muted">24min</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <p class="info">Ilość zamówień</p>
+                                    <p class="number text-muted">928</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <p class="info">Ilość reklamacji</p>
+                                    <p class="number text-muted">6</p>
+                                </div>
+                            </div>
+
+
+                        </section>
+
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        var options = {
+            series: [{
+                name: 'Aktywni użytkownicy',
+                data: [31, 40, 28, 51, 42, 109, 100]
+            }, {
+                name: 'Ilość postów',
+                data: [11, 32, 45, 32, 34, 52, 41]
+            }],
+            chart: {
+                height: 350,
+                type: 'area',
+                foreColor: '#fff'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            },
+            legend: {
+                show: false
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+    </script>
+
+</body>
+
+</html>

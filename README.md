@@ -1,1 +1,1 @@
-# Diamond-CMS
+# Front-endowy prototyp aplikacji dla firmy:
